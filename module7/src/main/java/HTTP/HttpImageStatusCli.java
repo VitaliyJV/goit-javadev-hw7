@@ -9,7 +9,7 @@ public class HttpImageStatusCli {
         Scanner scanner = new Scanner(System.in);
         HttpStatusImageDownloader downloader = new HttpStatusImageDownloader();
         int code = 0;
-        System.out.println("Please enter code, or enter 'exit' to stop the program: ");
+        System.out.println("Please enter code, or enter 'exit' to stop the program: \n");
 
         while (scanner.hasNext()) {
             if (scanner.hasNextLine()) {
@@ -32,7 +32,7 @@ public class HttpImageStatusCli {
                     System.out.println("There is not image for HTTP status " + code);
                 }
 
-                System.out.print("Enter HTTP status code or 'exit'");
+                System.out.print("Enter HTTP status code or 'exit': \n");
             }
         }
         scanner.close();
